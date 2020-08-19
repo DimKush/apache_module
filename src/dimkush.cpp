@@ -11,7 +11,7 @@ static int sample_handler(request_rec* req)
     
     ap_rputs("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\">\n", req);
     ap_rputs("<html><head><title>Sample apache module responce!</head></title>",req);
-    ap_rputs("<body><h1>Welcome</h1></body></html>", req);
+    ap_rputs("<body><h1>Welcome to the club, body.</h1></body></html>", req);
 
     return OK;
 }

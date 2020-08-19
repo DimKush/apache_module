@@ -1,1 +1,1 @@
-LoadModule dimkush /usr/lib/apache2/modules/mod_dimkush.so
+LoadModule mod_dimkush /usr/lib/apache2/modules/dimkush.cpp.so
