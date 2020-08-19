@@ -1,0 +1,1 @@
+LoadModule dimkush /usr/lib/apache2/modules/mod_dimkush.so
