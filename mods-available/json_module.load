@@ -1,0 +1,1 @@
+LoadModule mod_json_sample /usr/lib/apache2/modules/mod_json_sample.so
