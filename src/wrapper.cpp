@@ -6,14 +6,16 @@
 
 int serve(request_rec* req)
 {
-   const char* json = "{\"project\":\"rapidjson\",\"status\":10}";
+   const char* json = "{ \"project\":\"rapidjson\", \"status\":10, \"object\":{ \"value1\":20,\"value2\":30 } }";
     
     rapidjson::Document doc;
     doc.Parse(json);
     
     rapidjson::Value& statusVal = doc["status"];
+    rapidjson::Value& value1 = doc["object"]["value1"];
     statusVal.SetInt(0);
-
+    value1.SetInt(100);
+    
     // Stringify dom object
     rapidjson::StringBuffer buffer;
     rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
